@@ -7,7 +7,7 @@ a{
 }
 body{
     height: 100vh;
-    background: #cccccc url('/img/wallhaven-8834.jpg') no-repeat center center;
+    background: #cccccc url('./img/wallhaven-8834.jpg') no-repeat center center;
     background-size: cover;
 }
 /*  */
