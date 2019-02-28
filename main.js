@@ -6,10 +6,9 @@ function baiduSearch() {
     var text = searchText.value;
     window.open('https://www.baidu.com/s?wd='+text, '_blank');
 }
-searchText.addEventListener('input', function(e) {
-    // 阻止document.key事件
+searchText.onkeypress = function(e){
     e.stopPropagation();
-})
+}
 /**
  * 
  * 
