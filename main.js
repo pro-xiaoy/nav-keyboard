@@ -64,7 +64,10 @@ document.onkeypress = function(e) {
     if(e.key === 'Enter') {
         baiduSearch();
     } else {
-        var wrapkey = e.key.toUpperCase();
-        window.open('http://' +  navHash[wrapkey])
+        var reg = /^[a-z]$/;
+        if(reg.test(e.key)){
+            var wrapkey = e.key.toUpperCase();
+            window.open('http://' +  navHash[wrapkey])
+        }
     }
 }
